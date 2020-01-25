@@ -7,7 +7,7 @@ const keys = require('./config/keys');
 require('./models/User'); 
 require('./services/passport');
 
-mongoose.connect(
+mongoose.connect( 
   keys.mongoURI, 
   {
     useNewUrlParser: true,  
@@ -15,7 +15,7 @@ mongoose.connect(
   }
 );
  
-const app = express();
+const app = express(); 
 
 app.use(
   cookieSession({
