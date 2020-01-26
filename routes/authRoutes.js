@@ -12,9 +12,7 @@ module.exports = (app) => {
   
   app.get(
     '/auth/google/callback', 
-    passport.authenticate('google', {
-      successRedirect: '/'
-    })
+    passport.authenticate('google')
   );
 
   app.get(
